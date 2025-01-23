@@ -1,0 +1,223 @@
+/* Outer Container */
+.outerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 0 10rem; /* Default padding for larger screens */
+}
+
+/* Login Container */
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 10rem; /* Space between form and logo */
+}
+
+/* Heading and Welcome Text */
+.loginContainer h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.loginContainer p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.loginContainer input[type="text"],
+.loginContainer input[type="password"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.loginContainer input[type="text"]:focus,
+.loginContainer input[type="password"]:focus {
+    border-color: #4caf50;
+}
+
+/* Login Button */
+.loginButton {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.75rem;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover {
+    background-color: #43a047;
+    transform: scale(1.02);
+}
+
+/* Login Options (Remember Me and Forgot Password) */
+.loginOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.loginOptions label {
+    cursor: pointer;
+}
+
+.forgotPassword {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgotPassword:hover {
+    color: #ffae00;
+}
+
+/* Social Login Section */
+.socialLogin {
+    margin-top: 1.5rem;
+}
+
+.socialLogin p {
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.socialBtn {
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 120px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.25rem;
+}
+
+.facebookBtn {
+    background-color: #3b5998;
+}
+
+.googleBtn {
+    background-color: #db4437;
+}
+
+.socialBtn:hover {
+    opacity: 0.9;
+}
+
+/* Sign-Up Text */
+.signupText {
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    margin-top: 1.5rem;
+}
+
+.signupText a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signupText a:hover {
+    color: #ffae00;
+}
+
+/* Logo Container */
+.logoContainer {
+    flex: 1; /* Ensure the container takes remaining horizontal space */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10rem; /* Increased padding from the right edge */
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets, 768px and above) */
+@media (max-width: 768px) {
+    .outerContainer {
+        flex-direction: column; /* Stack logo and form vertically */
+        padding: 2rem;
+    }
+
+    .loginContainer {
+        margin: 0 auto; /* Center-align the form */
+        text-align: center;
+    }
+
+    .logoContainer {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 1.5rem; /* Add space below the logo */
+    }
+
+    .logo {
+        max-width: 60%; /* Adjust logo size for tablets */
+    }
+}
+
+/* Small Devices (Mobile Phones, 480px and above) */
+@media (max-width: 480px) {
+    .outerContainer {
+        padding: 1rem; /* Reduce padding for smaller devices */
+    }
+
+    .loginContainer {
+        margin: 0;
+        padding: 1rem;
+        width: 100%; /* Full width for mobile screens */
+    }
+
+    .loginContainer input[type="text"],
+    .loginContainer input[type="password"] {
+        max-width: 100%; /* Full width input fields */
+    }
+
+    .loginButton {
+        max-width: 100%; /* Full width login button */
+    }
+
+    .logoContainer {
+        margin-bottom: 1rem; /* Add spacing below the logo */
+    }
+
+    .logo {
+        max-width: 80%; /* Resize the logo for small screens */
+    }
+}

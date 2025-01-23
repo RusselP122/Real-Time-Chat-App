@@ -1,0 +1,100 @@
+.adminUserInfo {
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Align all items (icons and text) vertically */
+    justify-content: space-between;
+    background-color: #22263a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 15px;
+}
+
+.admin img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin h2 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 0; /* Remove extra space for proper alignment */
+}
+
+.adminIcons {
+    display: flex;
+    align-items: center; /* Align icons vertically with the text */
+    gap: 10px;
+}
+
+.adminIcons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.adminIcons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Media Queries */
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .adminUserInfo {
+        padding: 15px;
+        flex-direction: column; /* Stack admin and icons */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .admin {
+        gap: 10px;
+    }
+
+    .admin img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .admin h2 {
+        font-size: 16px;
+    }
+
+    .adminIcons {
+        gap: 8px;
+    }
+
+    .adminIcons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .adminUserInfo {
+        padding: 15px;
+    }
+
+    .admin img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .admin h2 {
+        font-size: 17px;
+    }
+
+    .adminIcons img {
+        width: 22px;
+        height: 22px;
+    }
+}

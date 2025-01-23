@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body{
+background-image: url("spc.jpg");
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+color:white;
+}
+
+.container {
+width: 77vw;
+height: 90vh;
+background-color: rgba(17, 25, 40, 0.75);
+backdrop-filter: blur(19px) saturate(180%);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+display: flex;
+}
+
+.chatList,
+.chat,
+.detail {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px; /* Prevent collapsing */
+    max-width: 400px; /* Prevent panels from becoming too wide */
+}
+
+.chat {
+    flex: 2; /* Middle section is wider */
+    border-left: 1px solid rgba(221, 221, 221, 0.2);
+    border-right: 1px solid rgba(221, 221, 221, 0.2);
+    max-width: 800px; /* Limit middle panel width */
+}
+
+/* General Loading Styles */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/path/to/your/image.png') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    color: white;
+    text-align: center;
+  }
+  
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #f0e130; /* Bright accent color for spinner */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff; /* Bright text for better contrast */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+  }
+  

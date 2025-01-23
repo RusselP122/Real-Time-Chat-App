@@ -1,0 +1,83 @@
+/* Outer Container */
+.outerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 0 10rem;
+}
+
+/* Create Account Container */
+.createAccountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Heading and welcome text */
+.createAccountContainer h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.createAccountContainer p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Input fields */
+.createAccountContainer input[type="text"],
+.createAccountContainer input[type="email"],
+.createAccountContainer input[type="password"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.createAccountContainer input[type="text"]:focus,
+.createAccountContainer input[type="email"]:focus,
+.createAccountContainer input[type="password"]:focus {
+    border-color: #4caf50;
+}
+
+/* Create Account button */
+.createButton {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.75rem;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.createButton:hover {
+    background-color: #43a047;
+    transform: scale(1.02);
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+    .outerContainer {
+        padding: 0 2rem;
+    }
+}

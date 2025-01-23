@@ -1,0 +1,275 @@
+.admin-chat-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  .admin-chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1a1d2d;
+    color: white;
+    width: calc(100% - 250px); /* Adjust width based on the left margin */
+  }
+  
+  /* Header Section */
+  .admin-top {
+    padding: 10px 15px; /* Reduced padding for compact spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #22263a; /* Header background color */
+  }
+
+  .admin-details {
+    width: 300px;
+    background-color: #1a1d2d;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .admin-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .admin-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #5183fe;
+  }
+  
+  .admin-user .admin-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .admin-user .admin-texts span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .admin-user .admin-texts p {
+    font-size: 12px;
+    color: #a5a5a5;
+    margin: 0;
+  }
+  
+  .admin-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .admin-icons img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  /* Messages Section */
+  .admin-center {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #121425;
+  }
+  
+  .admin-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  
+  .admin-message-container.own {
+    align-items: flex-end;
+  }
+  
+  /* Message bubble styles */
+  .admin-message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 60%;
+    font-size: 14px;
+    background-color: #2b2f42;
+    color: white;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  
+  /* Style for image messages */
+  .admin-image-message {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .admin-image-message img {
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  .admin-message a.admin-file-link {
+    display: inline-block;
+    padding: 8px 12px;
+    color: lightblue;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  .admin-message a.admin-file-link:hover {
+    color: deepskyblue;
+  }
+  
+  .admin-message-container .admin-timestamp {
+    font-size: 0.75rem;
+    color: #a5a5a5;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .admin-message-container.own .admin-timestamp {
+    text-align: right;
+  }
+  
+  /* Modal for viewing images */
+  .admin-image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .admin-modal-content img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: default;
+  }
+  
+  .admin-modal-content {
+    position: relative;
+    background: transparent;
+  }
+  
+  .admin-image-modal:hover {
+    cursor: pointer;
+  }
+  
+  /* Input Section */
+  .admin-bottom {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #22263a;
+    margin-left: 10px; /* Slight shift to the right for input field */
+  }
+  
+  .admin-bottom input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2b2f42;
+    color: white;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .admin-bottom input::placeholder {
+    color: #a5a5a5;
+  }
+  
+  .admin-bottom .admin-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .admin-sendButton {
+    background-color: #5183fe;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .admin-sendButton:hover {
+    background-color: #426ac7;
+  }
+  
+  /* Attachment Preview */
+  .admin-attachment-preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .admin-attachment-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .admin-attachment-preview img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 8px;
+  }
+  
+  .admin-remove-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .admin-remove-button:hover {
+    background: darkred;
+  }
+  

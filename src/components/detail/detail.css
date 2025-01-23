@@ -1,0 +1,409 @@
+.detail {
+    background-color: #1a1d2d;
+    color: white;
+    padding: 10px;
+}
+
+.user {
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Members Section Styling */
+.members {
+    background-color: #1f1f2e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+  }
+  
+  .members h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #4f8aff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  .members ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .members li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #2c2c3e;
+    font-size: 16px;
+  }
+  
+  .members li:last-child {
+    border-bottom: none;
+  }
+  
+  .members li img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #444;
+    object-fit: cover;
+  }
+  
+  .members li span {
+    font-weight: 500;
+  }
+  
+  /* Hover Effect for Members */
+  .members li:hover {
+    background-color: #2c2c3e;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 10px;
+    transition: all 0.2s ease;
+  }
+  
+
+.fileIcon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between the icon and the text */
+}
+
+
+.fileIcon img {
+    width: 20px; /* Icon size */
+    height: 20px;
+    object-fit: contain;
+}
+
+.fileIcon span {
+    font-size: 14px; /* Font size for the file name */
+    color: lightgray; /* Match your design */
+    font-weight: 500; /* Make it slightly bold */
+    overflow: hidden; /* Prevent overflow for long names */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Adjust width as needed */
+}
+
+.fileLink {
+    color: lightblue; /* Highlight link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Match your font size */
+    font-weight: 500; /* Slightly bold */
+    cursor: pointer; /* Add pointer cursor */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .fileLink:hover {
+    color: deepskyblue; /* Change color on hover */
+  }
+
+  .BlockmodalContent {
+    background: #1a1d2d;         /* Dark background to match your theme */
+    padding: 20px 30px;         /* Spacing inside the modal */
+    border-radius: 12px;        /* Rounded corners for a modern look */
+    color: #ffffff;             /* White text color for contrast */
+    text-align: center;         /* Center-align the text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    max-width: 400px;           /* Set a maximum width for the modal */
+    width: 100%;                /* Ensure it takes full width within the max width */
+  }
+  
+  /* Modal text styling */
+  .BlockmodalContent p {
+    margin-bottom: 20px;        /* Spacing below the text */
+    font-size: 16px;            /* Readable font size */
+    line-height: 1.5;           /* Improve readability */
+  }
+  
+  /* Button container for block and cancel buttons */
+  .BlockmodalContent button {
+    margin: 10px;               /* Spacing around the buttons */
+    padding: 10px 20px;         /* Padding inside the buttons */
+    background-color: #5183fe;  /* Primary button color */
+    color: #ffffff;             /* White text for contrast */
+    border: none;               /* Remove default border */
+    border-radius: 8px;         /* Rounded corners for buttons */
+    cursor: pointer;            /* Pointer cursor on hover */
+    font-size: 14px;            /* Consistent font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for buttons */
+  .BlockmodalContent button:hover {
+    background-color: #426ac7;  /* Darker blue on hover */
+  }
+  
+  /* Cancel button styling for differentiation */
+  .BlockmodalContent button:nth-child(2) {
+    background-color: #ff4c4c;  /* Red color for cancel button */
+  }
+  
+  /* Hover effect for the cancel button */
+  .BlockmodalContent button:nth-child(2):hover {
+    background-color: #d63030;  /* Darker red on hover */
+  }
+
+  .media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .mediaItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2b2f42;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  
+  .mediaItem:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mediaDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .mediaDetail video {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .mediaDetail span {
+    font-size: 14px;
+    color: lightgray;
+    font-weight: 300;
+  }
+  
+  .mediaDetail video:hover {
+    outline: 2px solid #0078ff;
+  }
+
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .modalContents img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.option .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photoDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.photoDetail img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.photoDetail span {
+    font-size: 14px;
+    color: lightgray;
+    font-weight: 300;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button {
+    padding: 15px;
+    background-color: rgba(230, 74, 105, 0.553);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(220, 20, 60, 0.796);
+}
+
+.logout {
+    padding: 10px;
+    background-color: #1a73e8;
+}
+
+/* Media Queries */
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .user img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .title img {
+        width: 24px;
+        height: 24px;
+        padding: 8px;
+    }
+
+    .photoDetail img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .photoDetail span {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .detail {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .user {
+        width: 100%;
+        border-bottom: none;
+        padding: 10px;
+        border-right: 1px solid #dddddd35;
+    }
+
+    .info {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .title img {
+        width: 28px;
+        height: 28px;
+        padding: 8px;
+    }
+
+    .photoDetail img {
+        width: 35px;
+        height: 35px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Large Screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .user img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info {
+        padding: 30px;
+    }
+
+    .title img {
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+    }
+
+    .photoDetail img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .photoDetail span {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 15px;
+    }
+}

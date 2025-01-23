@@ -1,0 +1,162 @@
+/* Outer Container */
+.outerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 0 5rem;
+}
+
+/* Create Account Container */
+.createAccountContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+  text-align: center;
+  margin-right: 2rem;
+  padding: 1rem;
+}
+
+/* Heading and Welcome Text */
+.createAccountContainer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.createAccountContainer p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+}
+
+/* Input Fields */
+.inputField {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #4caf50;
+}
+
+/* Create Account Button */
+.createButton {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.createButton:hover {
+  background-color: #43a047;
+  transform: scale(1.02);
+}
+
+/* Logo Container */
+.logoContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10rem;
+}
+
+/* Logo Styling */
+.logo {
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium devices (tablets, 768px and above) */
+@media (max-width: 768px) {
+  .outerContainer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logoContainer {
+    justify-content: center;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .createAccountContainer {
+    margin: 0;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .logo {
+    max-width: 350px;
+  }
+}
+
+/* Small devices (mobile phones, 480px and above) */
+@media (max-width: 480px) {
+  .outerContainer {
+    padding: 0.5rem;
+  }
+
+  .logoContainer {
+    margin-bottom: 1rem;
+  }
+
+  .createAccountContainer h2 {
+    font-size: 2rem;
+  }
+
+  .createAccountContainer p {
+    font-size: 1rem;
+  }
+
+  .inputField, .createButton {
+    max-width: 100%;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+}
+
+/* Login Button */
+.loginButton {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.loginButton:hover {
+  background-color: #1976d2;
+  transform: scale(1.02);
+}

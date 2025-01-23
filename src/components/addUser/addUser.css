@@ -1,0 +1,186 @@
+.addUser {
+    width: 400px;
+    max-width: 90%;
+    padding: 30px;
+    background-color: #1a1d2d; /* Dark theme background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.addUser form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.addUser form input {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.addUser form input::placeholder {
+    color: #a5a5a5;
+}
+
+.addUser form input:focus {
+    border-color: #5183fe;
+}
+
+.addUser form button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #5183fe;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.addUser form button:hover {
+    background-color: #426ac7;
+    transform: scale(1.03);
+}
+
+.addUser .error {
+    color: #e64a69;
+    font-size: 14px;
+    text-align: center;
+}
+
+.addUser .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addUser .user:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.addUser .user .detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.addUser .user .detail img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #5183fe;
+}
+
+.addUser .user .detail span {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.addUser .user button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #5183fe;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addUser .user button:hover {
+    background-color: #426ac7;
+    transform: scale(1.03);
+}
+
+/* Responsive Design */
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .addUser {
+        padding: 20px;
+    }
+
+    .addUser form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .addUser form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .addUser .user .detail img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .addUser .user .detail span {
+        font-size: 14px;
+    }
+
+    .addUser .user button {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+}
+
+/* Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .addUser {
+        padding: 25px;
+    }
+
+    .addUser form input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .addUser form button {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .addUser .user .detail img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .addUser .user .detail span {
+        font-size: 15px;
+    }
+
+    .addUser .user button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
